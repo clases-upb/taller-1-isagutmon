@@ -232,10 +232,9 @@ public class Taller1 {
             final float gasto = (float)(0.2 / 60.8);           
    
             //Calculamos por el gasto por el despegue y el aterrizaje por las 4 rutas
-            toneladas_despeje_aterrizaje = (toneladas_aterrizaje + toneladas_despegue);//Esta es la fórmula que da el gasto total por el aterrizaje y el despegue
-            float despegue_aterrizaje_total = (toneladas_despeje_aterrizaje) * 4; //Multiplicamos *4 porque son 4 rutas
+            toneladas_despeje_aterrizaje = (toneladas_aterrizaje + toneladas_despegue)*4;
             
-            combustible_a_cargar = (ruta_1 * gasto) + (ruta_2 * gasto) + (ruta_3 * gasto) + ( ruta_4 * gasto) + (despegue_aterrizaje_total);
+            combustible_a_cargar = (ruta_1 * gasto) + (ruta_2 * gasto) + (ruta_3 * gasto) + ( ruta_4 * gasto) + (toneladas_despeje_aterrizaje);
 
             //Return 
             return combustible_a_cargar;    
@@ -245,6 +244,7 @@ public class Taller1 {
             return -1;
             }
     }
+
 
     /*10. Diseñe un algoritmo e implemente la función Calcular_peso_luna que recibe un byte con el peso en la tierra en kilos
     y devuelve un double el equivalente de ese peso en la luna en Newtons. Utilice las siguientes fórmulas.
