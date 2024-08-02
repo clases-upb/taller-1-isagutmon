@@ -233,7 +233,7 @@ public class Taller1 {
    
             //Calculamos por el gasto por el despegue y el aterrizaje por las 4 rutas
             toneladas_despeje_aterrizaje = (toneladas_aterrizaje + toneladas_despegue)*4;
-            
+            //calculamos el combustible a cargar teniendo en cuenta todas las rutas
             combustible_a_cargar = (ruta_1 * gasto) + (ruta_2 * gasto) + (ruta_3 * gasto) + ( ruta_4 * gasto) + (toneladas_despeje_aterrizaje);
 
             //Return 
