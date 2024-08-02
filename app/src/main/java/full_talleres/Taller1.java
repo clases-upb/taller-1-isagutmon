@@ -17,9 +17,7 @@ package full_talleres;
 
 public class Taller1 {
     
-    public static void main(String[] args) {
-        System.out.println(Calcular_peso_carga(47.5f,7.5f ));
-      
+    public static void main(String[] args) { 
     }
 
     /* 
